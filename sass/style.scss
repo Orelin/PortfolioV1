@@ -1,0 +1,51 @@
+body {
+    margin: 2rem;
+    background: #1A1A2E;
+    display: grid;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+    text-align: center;
+    background: #0F3460;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+nav {
+
+}
+
+nav a{
+    padding-right: 1rem;
+    font-size: 1.5rem;
+
+}
+
+.content  {
+    text-align: start;
+    background-color: #E94560;
+    padding: 10rem 0 10rem 5rem;
+
+}
+h2{
+    font-size: 2rem;
+    
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#proyects {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#proyects .card {
+    background-color: aqua;
+}

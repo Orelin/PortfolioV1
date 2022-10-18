@@ -1,0 +1,50 @@
+body {
+  margin: 2rem;
+  background: #1A1A2E;
+  display: -ms-grid;
+  display: grid;
+}
+
+#header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #0F3460;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+nav a {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.content {
+  text-align: start;
+  background-color: #E94560;
+  padding: 10rem 0 10rem 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#proyects {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+#proyects .card {
+  background-color: aqua;
+}
