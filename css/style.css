@@ -5,7 +5,12 @@ body {
   display: grid;
 }
 
+/*@mixin grid ($display, $col1, $col2) {
+    display: $display;
+    grid-template-columns: $col1, $col2;
+}*/
 #header {
+  /* @include grid(grid, 20%, auto)*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto;
@@ -38,6 +43,7 @@ h2 {
 
 p {
   font-size: 1.5rem;
+  font-weight: 100;
 }
 
 #proyects {
@@ -45,6 +51,14 @@ p {
   text-align: center;
 }
 
+#proyects .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 #proyects .card {
-  background-color: aqua;
+  margin: 1rem;
+  border: black solid;
 }
