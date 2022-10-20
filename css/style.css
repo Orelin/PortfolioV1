@@ -19,7 +19,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: #0F3460;
 }
 
 h1 {
@@ -33,7 +32,6 @@ nav a {
 
 .content {
   text-align: start;
-  background-color: #E94560;
   padding: 10rem 0 10rem 5rem;
 }
 
@@ -52,6 +50,7 @@ p {
 }
 
 #proyects .cards {
+  /*    @include grid(grid, 1fr, 1fr)*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
