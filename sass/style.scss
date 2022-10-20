@@ -1,9 +1,13 @@
 body {
-    margin: 2rem;
-    background: #1A1A2E;
     display: grid;
+    background: black;
+    font-family: 'Playfair Display', serif;
 }
 
+canvas {
+    position: fixed;
+    z-index: -2;
+}
 /*@mixin grid ($display, $col1, $col2) {
     display: $display;
     grid-template-columns: $col1, $col2;
@@ -12,19 +16,59 @@ body {
 #header {
     /* @include grid(grid, 20%, auto)*/
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 25% auto;
     align-items: center;
     text-align: center;
+    border: 5px solid black;
+}
+
+#logo {
+    display: grid;
+    grid-template-rows: 25% auto;
+    align-items: center;
+    min-height: 100%;
 }
 
 h1 {
     font-size: 4rem;
+    text-decoration: underline;
+}
+.fa {
+    padding: 1rem;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
-nav a{
-    padding-right: 1rem;
-    font-size: 1.5rem;
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-telegram {
+    background: #30a4da;
+    color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
 
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li {
+    width: 100%;
+}
+
+a {
+    text-align: center;
+    margin: 1rem;
 }
 
 .content  {
@@ -37,12 +81,12 @@ h2{
 
 p {
     font-size: 1.5rem;
-    font-weight: 100;
+    padding-top: 1rem;
 }
 
 #proyects {
-    background-color: antiquewhite;
     text-align: center;
+    background-color: transparent;
 }
 
 #proyects .cards{
