@@ -17,6 +17,5 @@ const options = {
     strokeWidth: 0,
     points: null
 }
-console.log(options.xColors)
 const pattern = trianglify(options)
 document.body.appendChild(pattern.toCanvas())
