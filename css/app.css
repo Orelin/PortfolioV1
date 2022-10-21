@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 :root {
-  --negro: #393939;
+    --negro: #393939;
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
-  --tipo-secundaria: Verdana;
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
 }
 
 /* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
-}
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --negro: #ececec;
+    }
+}*/
 /* Opcional */
 /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* Opcional */
@@ -38,8 +38,8 @@
 /* Evitamos problemas con las imagenes */
 img, picture, video, iframe, figure {
     max-width: 100%;
-    width: 100%;
-    display: block;
+    width: 50%;
+    /*display: block;
     /* opcional */
     -o-object-fit: cover;
         object-fit: cover;

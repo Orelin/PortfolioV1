@@ -2,24 +2,19 @@ body {
     display: grid;
     background: black;
     font-family: 'Playfair Display', serif;
+    color: black;
 }
-
 canvas {
     position: fixed;
     z-index: -2;
 }
-/*@mixin grid ($display, $col1, $col2) {
-    display: $display;
-    grid-template-columns: $col1, $col2;
-}*/
 
 #header {
-    /* @include grid(grid, 20%, auto)*/
     display: grid;
     grid-template-columns: 25% auto;
     align-items: center;
     text-align: center;
-    border: 5px solid black;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.50);
 }
 
 #logo {
@@ -35,8 +30,7 @@ h1 {
 }
 .fa {
     padding: 1rem;
-    font-size: 30px;
-    width: 50px;
+    font-size: 2rem;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
@@ -89,14 +83,17 @@ p {
     background-color: transparent;
 }
 
-#proyects .cards{
-/*    @include grid(grid, 1fr, 1fr)*/
+h2 {
+    padding-top: 1rem;
+    text-decoration: underline;
+}
+
+.cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-
-#proyects .card {
-    margin: 1rem;
-    border: black solid;
+.card {
+    margin: 2rem 1rem;
+    //border: 2px solid rgba(128, 128, 128, 0.50);
 }
