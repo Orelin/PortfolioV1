@@ -17,5 +17,13 @@ const options = {
     strokeWidth: 0,
     points: null
 }
-const pattern = trianglify(options)
+let pattern = trianglify(options)
 document.body.appendChild(pattern.toCanvas())
+
+
+const noClic = document.querySelector(".noClic");
+noClic.addEventListener("mousedown", () => {
+    options.xColors = "random";
+    pattern = trianglify(options);
+    document.body.appendChild(pattern.toCanvas());
+})

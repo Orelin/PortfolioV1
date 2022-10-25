@@ -49,16 +49,15 @@ h1 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  color: white;
 }
 
 .fa-linkedin {
   background: #007bb5;
-  color: white;
 }
 
 .fa-github {
   background: black;
-  color: white;
 }
 
 .fa:hover {
