@@ -5,13 +5,7 @@ body {
   font-family: "Playfair Display", serif;
   color: black;
 }
-
-canvas {
-  position: fixed;
-  z-index: -2;
-}
-
-#header {
+body #header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% auto;
@@ -22,8 +16,7 @@ canvas {
   text-align: center;
   border-bottom: 2px solid rgba(128, 128, 128, 0.5);
 }
-
-#logo {
+body #header #logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 25% auto;
@@ -33,13 +26,26 @@ canvas {
           align-items: center;
   min-height: 100%;
 }
-
-h1 {
+body #header #logo h1 {
   font-size: 4rem;
   text-decoration: underline;
 }
-
-.fa {
+body #header #logo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+body #header #logo ul li {
+  width: 100%;
+}
+body #header #logo ul a {
+  text-align: center;
+  margin: 1rem;
+}
+body #header #logo ul .fa {
   padding: 1rem;
   text-decoration: none;
   margin: 5px 2px;
@@ -50,71 +56,49 @@ h1 {
   -o-border-radius: 50%;
   color: white;
 }
-
-.fa-linkedin {
+body #header #logo ul .fa-linkedin {
   background: #007bb5;
 }
-
-.fa-github {
+body #header #logo ul .fa-github {
   background: black;
 }
-
-.fa:hover {
+body #header #logo ul .fa:hover {
   opacity: 0.7;
 }
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-ul li {
-  width: 100%;
-}
-
-a {
-  text-align: center;
-  margin: 1rem;
-}
-
-.content {
+body #header .content {
   text-align: start;
   padding: 10rem 0 10rem 5rem;
 }
-
-h2 {
-  font-size: 2rem;
-  line-height: 1;
-}
-
-p {
-  font-size: 1.5rem;
-  padding-top: 1rem;
-}
-
-#proyects {
+body #proyects {
   text-align: center;
   background-color: transparent;
 }
-
-h2 {
+body #proyects h2 {
+  font-size: 2rem;
+  line-height: 1;
   padding-top: 1rem;
   text-decoration: underline;
 }
-
-.cards {
+body #proyects .cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
-
-.card {
+body #proyects .cards .card {
   margin: 2rem 1rem;
+}
+body #proyects .cards .card .img {
+  background: transparent;
+}
+body #proyects .cards .card p {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+canvas {
+  position: fixed;
+  z-index: -2;
 }
 
 @media (max-width: 768px) {
