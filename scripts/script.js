@@ -23,7 +23,9 @@ document.body.appendChild(pattern.toCanvas())
 
 const noClic = document.querySelector(".noClic");
 noClic.addEventListener("mousedown", () => {
-    options.xColors = "random";
+    options.xColors = "random"
+    const magic = Math.random().toFixed(1);
+    options.variance = magic*2;
     pattern = trianglify(options);
     document.body.appendChild(pattern.toCanvas());
 })
