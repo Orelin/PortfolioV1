@@ -59,7 +59,12 @@ body {
                 .fa-github {
                     background: black;
                 }
-                
+                .fa-palette {
+                    margin: 0px;
+                    color: indianred;
+                    border: 1px dashed;
+                    border-color: #AAC4FF #FFE3E1 #FFD1D1 #FF9494;
+                }
                 .fa:hover {
                     opacity: 0.7;
                 }
@@ -68,50 +73,50 @@ body {
         .content  {
             text-align: start;
             padding: 10rem 0 10rem 5rem;
+            p {
+                font-size: 1.5rem;
+                padding-top: 1rem;
+            }
         }
     }
     #proyects {
         text-align: center;
         background-color: transparent;
-        h2{
-            font-size: 2rem;
-            line-height: 1;
-            padding-top: 1rem;
-            text-decoration: underline;
-        }
+
         .cards{
             display: grid;
             grid-template-columns: 1fr 1fr;
             .card {
                 margin: 2rem 1rem;
-                .img{
-                    background: transparent;
-                }
-                p {
-                    font-size: 1.5rem;
-                    padding-top: 1rem;
+                img{
+                    opacity: 60%;
                 }
             }
         }
     }
 }
+
 canvas {
     position: fixed;
     z-index: -2;
 }
 
+h2{
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 1rem;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-    #header {
+    body #header {
         grid-template-columns: auto;
         grid-template-rows: 40% auto;
     }
-    .fa {
-        padding: 0.5;
+    body #header .content {
+        padding: 10% 10% 50% 10%;
     }
-    h2{
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1rem;
+    body #header .content p {
+        font-size: 1.2rem;
     }
 }

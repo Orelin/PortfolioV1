@@ -62,6 +62,12 @@ body #header #logo ul .fa-linkedin {
 body #header #logo ul .fa-github {
   background: black;
 }
+body #header #logo ul .fa-palette {
+  margin: 0px;
+  color: indianred;
+  border: 1px dashed;
+  border-color: #AAC4FF #FFE3E1 #FFD1D1 #FF9494;
+}
 body #header #logo ul .fa:hover {
   opacity: 0.7;
 }
@@ -69,15 +75,13 @@ body #header .content {
   text-align: start;
   padding: 10rem 0 10rem 5rem;
 }
+body #header .content p {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
 body #proyects {
   text-align: center;
   background-color: transparent;
-}
-body #proyects h2 {
-  font-size: 2rem;
-  line-height: 1;
-  padding-top: 1rem;
-  text-decoration: underline;
 }
 body #proyects .cards {
   display: -ms-grid;
@@ -88,12 +92,8 @@ body #proyects .cards {
 body #proyects .cards .card {
   margin: 2rem 1rem;
 }
-body #proyects .cards .card .img {
-  background: transparent;
-}
-body #proyects .cards .card p {
-  font-size: 1.5rem;
-  padding-top: 1rem;
+body #proyects .cards .card img {
+  opacity: 60%;
 }
 
 canvas {
@@ -101,31 +101,34 @@ canvas {
   z-index: -2;
 }
 
+h2 {
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 1rem;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-  #header {
+  body #header {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     -ms-grid-rows: 40% auto;
     grid-template-rows: 40% auto;
   }
-  #header > *:nth-child(1) {
+  body #header > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  #header > *:nth-child(2) {
+  body #header > *:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
 
-  .fa {
-    padding: 0.5;
+  body #header .content {
+    padding: 10% 10% 50% 10%;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
+  body #header .content p {
+    font-size: 1.2rem;
   }
 }
