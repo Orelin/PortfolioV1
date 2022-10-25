@@ -41,7 +41,6 @@ h1 {
 
 .fa {
   padding: 1rem;
-  font-size: 2rem;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
@@ -116,4 +115,33 @@ h2 {
 
 .card {
   margin: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  #header {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: 40% auto;
+    grid-template-rows: 40% auto;
+  }
+  #header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #header > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .fa {
+    padding: 0.5;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
