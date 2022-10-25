@@ -2,7 +2,7 @@
 const trianglify = window.trianglify || require('trianglify')
 
 const options = { 
-    height: window.innerHeight, 
+    height: window.innerHeight*1.2, 
     width: window.innerWidth,
     cellSize: 40,
     variance: 2,

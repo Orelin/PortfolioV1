@@ -44,8 +44,8 @@ h1 {
     background: #007bb5;
     color: white;
 }
-.fa-telegram {
-    background: #30a4da;
+.fa-github {
+    background: black;
     color: white;
 }
 .fa:hover {
@@ -71,6 +71,7 @@ a {
 }
 h2{
     font-size: 2rem;
+    line-height: 1;
 }
 
 p {
@@ -96,4 +97,9 @@ h2 {
 .card {
     margin: 2rem 1rem;
     //border: 2px solid rgba(128, 128, 128, 0.50);
+}
+
+@media (min-width: 768px) {
+
+
 }

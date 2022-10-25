@@ -56,8 +56,8 @@ h1 {
   color: white;
 }
 
-.fa-telegram {
-  background: #30a4da;
+.fa-github {
+  background: black;
   color: white;
 }
 
@@ -90,6 +90,7 @@ a {
 
 h2 {
   font-size: 2rem;
+  line-height: 1;
 }
 
 p {
