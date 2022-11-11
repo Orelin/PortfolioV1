@@ -92,9 +92,17 @@ body #proyects .cards {
   grid-template-columns: 1fr 1fr;
 }
 body #proyects .cards .card {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   margin: 2rem 1rem;
 }
 body #proyects .cards .card img {
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
   opacity: 60%;
 }
 
@@ -182,11 +190,9 @@ h2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-
   body #header .content {
     padding: 10% 10% 50% 10%;
   }
-
   body #header .content p {
     font-size: 1.2rem;
   }

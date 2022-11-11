@@ -88,8 +88,14 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             .card {
+                align-self: end;
                 margin: 2rem 1rem;
                 img{
+                    border-radius: 5%;
+                    -webkit-border-radius: 5%;
+                    -moz-border-radius: 5%;
+                    -ms-border-radius: 5%;
+                    -o-border-radius: 5%;
                     opacity: 60%;
                 }
             }
