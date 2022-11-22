@@ -29,3 +29,6 @@ noClic.addEventListener("mousedown", () => {
     pattern = trianglify(options);
     document.body.appendChild(pattern.toCanvas());
 })
+
+let header = window.innerHeight;
+document.querySelector("body #header").style.minHeight = `${header}px`; 
