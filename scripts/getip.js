@@ -8,4 +8,3 @@ fetch(url)
     .catch(function(error) {
         console.log('Error en ipify', error.message)
     });
-

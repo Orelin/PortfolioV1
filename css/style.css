@@ -8,8 +8,8 @@ body {
 body #header {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 25% auto;
   -ms-grid-columns: 25% auto;
+  grid-template-columns: 25% auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,6 +104,9 @@ body #proyects .cards .card img {
   -ms-border-radius: 5%;
   -o-border-radius: 5%;
   opacity: 60%;
+}
+body #proyects .cards .card a {
+  background-color: rgba(222, 239, 235, 0.066);
 }
 
 canvas {
